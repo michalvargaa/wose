@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WOSE</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span> w<span>rite</span> </span>
+        <span> o<span>nce</span> </span>
+        <span> s<span>earch</span> </span>
+        <span> e<span>verywhere</span> </span>
+      </h1>
+    </header>
+    <main>
+      <section class="visible" id="intro">
+        <form>
+          <input type="text" placeholder="Search..." id="input" />
+
+          <div class="colors">
+            <input type="radio" name="color" id="0" checked />
+            <input type="radio" name="color" id="1" />
+            <input type="radio" name="color" id="2" />
+            <input type="radio" name="color" id="3" />
+            <input type="radio" name="color" id="4" />
+            <input type="radio" name="color" id="5" />
+            <input type="radio" name="color" id="6" />
+            <input type="radio" name="color" id="7" />
+            <input type="radio" name="color" id="8" />
+          </div>
+
+          <h2>Selected Search Engines</h2>
+          <div class="engines-selector">
+            <input
+              type="checkbox"
+              name="engines"
+              id="engine-visualizer"
+              checked
+              disabled
+            />
+            <label for="engine-visualizer" id="engine-visualizer-label"
+              >All</label
+            >
+
+            <input type="button" value="Edit" />
+          </div>
+
+          <input type="submit" value="Go" id="submit" />
+        </form>
+      </section>
+
+      <section class="hidden" id="search-engines">
+        <h2>Select Search Engines</h2>
+        <p class="hidden error">You must select at least 1 engine</p>
+
+        <!-- search engine checkboxes -->
+        <div class="search-engines-checkboxes">
+          <div>
+            <input
+              type="checkbox"
+              name="google"
+              id="google"
+              class="edit-engines"
+              checked
+            />
+            <label for="google" id="engine-visualizer-label">Google</label>
+
+            <input
+              type="checkbox"
+              name="bing"
+              id="bing"
+              class="edit-engines"
+              checked
+            />
+            <label for="bing" id="engine-visualizer-label">Bing</label>
+
+            <input
+              type="checkbox"
+              name="youtube"
+              id="youtube"
+              class="edit-engines"
+              checked
+            />
+            <label for="youtube" id="engine-visualizer-label">YouTube</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="yahoo"
+              id="yahoo"
+              class="edit-engines"
+              checked
+            />
+            <label for="yahoo" id="engine-visualizer-label">Yahoo</label>
+
+            <input
+              type="checkbox"
+              name="ecosia"
+              id="ecosia"
+              class="edit-engines"
+              checked
+            />
+            <label for="ecosia" id="engine-visualizer-label">Ecosia</label>
+
+            <input
+              type="checkbox"
+              name="duckduckgo"
+              id="duckduckgo"
+              class="edit-engines"
+              checked
+            />
+            <label for="duckduckgo" id="engine-visualizer-label"
+              >DuckDuckGo</label
+            >
+          </div>
+        </div>
+
+        <button class="continue">Continue</button>
+      </section>
+    </main>
+    <footer>
+      <p class="">
+        Creator
+        <a href="https://www.github.com/michalvargaa" target="_blank"
+          >@michalvargaa</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

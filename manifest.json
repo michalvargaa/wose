@@ -1,0 +1,10 @@
+{
+  "name": "WOSE",
+  "description": "Extension that allows quering for something once while receiving output from the most well-known search engines",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "tabGroups", "storage"]
+}
